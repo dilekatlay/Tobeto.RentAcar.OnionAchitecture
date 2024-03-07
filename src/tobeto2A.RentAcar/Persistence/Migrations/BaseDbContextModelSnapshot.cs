@@ -25,19 +25,19 @@ namespace Persistence.Migrations
             modelBuilder.Entity("Domain.Entities.Brand", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
+                        .ValueGeneratedOnAdd();
 
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime>("CreatedDate");
 
-                    b.Property<DateTime?>("DeletedDate")
+                    b.Property<DateTime?>("DeletedDate");
 
                     b.Property<string>("Logo")
-                        .IsRequired()
+                        .IsRequired();
 
                     b.Property<string>("Name")
-                        .IsRequired()
+                        .IsRequired();
 
-                    b.Property<DateTime?>("UpdatedDate")
+                    b.Property<DateTime?>("UpdatedDate");
 
                     b.HasKey("Id");
 
@@ -47,32 +47,32 @@ namespace Persistence.Migrations
             modelBuilder.Entity("Domain.Entities.Car", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
+                        .ValueGeneratedOnAdd();
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CarState")
-                        .IsRequired()
+                        .IsRequired();
 
-                    b.Property<int>("ColorId")
+                    b.Property<int>("ColorId");
 
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime>("CreatedDate");
 
-                    b.Property<DateTime?>("DeletedDate")
+                    b.Property<DateTime?>("DeletedDate");
 
                     b.Property<int>("Kilometer")
                         .ValueGeneratedOnAdd()
                         .HasMaxLength(1000000)
-                        .HasColumnType("int")
+                        .HasColumnType("int");
 
-                    b.Property<int>("ModelId")
+                    b.Property<int>("ModelId");
 
                     b.Property<string>("Plate")
-                        .IsRequired()
+                        .IsRequired();
 
-                    b.Property<DateTime>("UpdatedAt")
+                    b.Property<DateTime>("UpdatedAt");
 
-                    b.Property<DateTime?>("UpdatedDate")
+                    b.Property<DateTime?>("UpdatedDate");
 
                     b.HasKey("Id");
 
@@ -82,24 +82,24 @@ namespace Persistence.Migrations
             modelBuilder.Entity("Domain.Entities.CorporateCustomer", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
+                        .ValueGeneratedOnAdd();
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("CompanyName")
-                        .IsRequired()
+                        .IsRequired();
 
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime>("CreatedDate");
 
-                    b.Property<int>("CustomerId")
+                    b.Property<int>("CustomerId");
 
-                    b.Property<DateTime?>("DeletedDate")
+                    b.Property<DateTime?>("DeletedDate");
 
                     b.Property<int>("TaxNo")
                         .HasMaxLength(10)
-                        .HasColumnType("int")
+                        .HasColumnType("int");
 
-                    b.Property<DateTime?>("UpdatedDate")
+                    b.Property<DateTime?>("UpdatedDate");
 
                     b.HasKey("Id");
 
@@ -108,15 +108,15 @@ namespace Persistence.Migrations
             modelBuilder.Entity("Domain.Entities.Customer", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
+                        .ValueGeneratedOnAdd();
 
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime>("CreatedDate");
 
-                    b.Property<DateTime?>("DeletedDate")
+                    b.Property<DateTime?>("DeletedDate");
 
-                    b.Property<DateTime?>("UpdatedDate")
+                    b.Property<DateTime?>("UpdatedDate");
 
-                    b.Property<int>("UserId")
+                    b.Property<int>("UserId");
 
                     b.HasKey("Id");
 
@@ -164,18 +164,18 @@ namespace Persistence.Migrations
             modelBuilder.Entity("Domain.Entities.Fuel", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
+                        .ValueGeneratedOnAdd();
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime>("CreatedDate");
 
-                    b.Property<DateTime?>("DeletedDate")
+                    b.Property<DateTime?>("DeletedDate");
 
                     b.Property<string>("Name")
-                        .IsRequired()
+                        .IsRequired();
 
-                    b.Property<DateTime?>("UpdatedDate")
+                    b.Property<DateTime?>("UpdatedDate");
 
                     b.HasKey("Id");
 
@@ -185,24 +185,24 @@ namespace Persistence.Migrations
             modelBuilder.Entity("Domain.Entities.IndividualCustomer", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
+                        .ValueGeneratedOnAdd();
 
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime>("CreatedDate");
 
-                    b.Property<int>("CustomerId")
+                    b.Property<int>("CustomerId");
 
-                    b.Property<DateTime?>("DeletedDate")
+                    b.Property<DateTime?>("DeletedDate");
 
                     b.Property<string>("FirstName")
-                        .IsRequired()
+                        .IsRequired();
 
                     b.Property<string>("LastName")
-                        .IsRequired()
+                        .IsRequired();
 
                     b.Property<string>("NationalIdentity")
-                        .IsRequired()
+                        .IsRequired();
 
-                    b.Property<DateTime?>("UpdatedDate")
+                    b.Property<DateTime?>("UpdatedDate");
 
                     b.HasKey("Id");
 
@@ -212,28 +212,28 @@ namespace Persistence.Migrations
             modelBuilder.Entity("Domain.Entities.Model", b =>
                 {
                     b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
+                        .ValueGeneratedOnAdd();
 
-                    b.Property<int>("BrandId")
+                    b.Property<int>("BrandId");
 
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime>("CreatedDate");
 
-                    b.Property<decimal>("DailyPrice")
+                    b.Property<decimal>("DailyPrice");
 
-                    b.Property<DateTime?>("DeletedDate")
+                    b.Property<DateTime?>("DeletedDate");
 
-                    b.Property<int>("FuelId")
+                    b.Property<int>("FuelId");
 
                     b.Property<string>("Name")
-                        .IsRequired()
+                        .IsRequired();
 
-                    b.Property<int>("TransmissionId")
+                    b.Property<int>("TransmissionId");
 
-                    b.Property<DateTime?>("UpdatedDate")
+                    b.Property<DateTime?>("UpdatedDate");
 
                     b.Property<short>("Year")
                         .HasMaxLength(4)
-                        .HasColumnType("smallint")
+                        .HasColumnType("smallint");
 
                     b.HasKey("Id");
 
@@ -513,18 +513,18 @@ namespace Persistence.Migrations
             modelBuilder.Entity("Domain.Entities.Transmission", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
+                        .ValueGeneratedOnAdd();
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("CreatedDate")
+                    b.Property<DateTime>("CreatedDate");
 
-                    b.Property<DateTime?>("DeletedDate")
+                    b.Property<DateTime?>("DeletedDate");
 
                     b.Property<string>("Name")
-                        .IsRequired()
+                        .IsRequired();
 
-                    b.Property<DateTime?>("UpdatedDate")
+                    b.Property<DateTime?>("UpdatedDate");
 
                     b.HasKey("Id");
 
