@@ -25,4 +25,22 @@
         <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Features\Brands\Commands\Delete\" />
+    <Folder Include="Features\Brands\Commands\Update\" />
+    <Folder Include="Features\Cars\Commands\Delete\" />
+    <Folder Include="Features\Cars\Commands\Update\" />
+    <Folder Include="Features\CorporateCustomers\Commands\Delete\" />
+    <Folder Include="Features\CorporateCustomers\Commands\Update\" />
+    <Folder Include="Features\Customers\Commands\Delete\" />
+    <Folder Include="Features\Customers\Commands\Update\" />
+    <Folder Include="Features\Fuels\Commands\Delete\" />
+    <Folder Include="Features\Fuels\Commands\Update\" />
+    <Folder Include="Features\IndividualCustomers\Commands\Delete\" />
+    <Folder Include="Features\IndividualCustomers\Commands\Update\" />
+    <Folder Include="Features\Models\Commands\Delete\" />
+    <Folder Include="Features\Models\Commands\Update\" />
+    <Folder Include="Features\Transmissions\Commands\Delete\" />
+    <Folder Include="Features\Transmissions\Commands\Update\" />
+  </ItemGroup>
 </Project>
